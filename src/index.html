@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Search images</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <link rel="stylesheet" href="./styles.css"/>
   </head>
@@ -15,7 +15,11 @@
     формы необходимо выполнять HTTP-запрос. -->
 <div class="top-line">
   <form class="search-form" id="search-form">
-      <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+      <input 
+        type="text" 
+        name="searchQuery" 
+        autocomplete="off" 
+        placeholder="Search images..." />
       <button class="search-btn" type="submit">Search</button>
     </form>
 </div>
@@ -25,8 +29,9 @@
 </div>
 <!-- В HTML документе уже есть разметка кнопки при клике по которой необходимо выполнять запрос за следующей группой
 изображений и добавлять разметку к уже существующим элементам галереи. -->
-<button type="button" class="load-more">Load more</button>
-
+<div class='js-btnContainer'>
+  <button type="button" class="load-more" hidden>Load more</button>
+</div>
     <script type="module" src="./index.js"></script>
   </body>
 </html>
