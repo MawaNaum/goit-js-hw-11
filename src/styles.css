@@ -1,0 +1,16 @@
+/* Добавь оформление элементов интерфейса. */
+.top-line {
+    background-color: #3F57B3;
+}
+.search-form {
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+input {
+    padding: 10px 10px;
+    width: 400px;
+}
+.search-btn {
+    padding: 10px 10px;
+}
